@@ -48,6 +48,9 @@ let toastId = 0
 /**
  * @public
  */
+
+// TODO: add the ability to set the position of the toast component
+
 export function ToastProvider(props: ToastProviderProps): React.ReactElement {
   const {children, padding = 4, paddingX, paddingY, zOffset} = props
   const [state, _setState] = useState<ToastState>([])
